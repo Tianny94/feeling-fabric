@@ -1,0 +1,26 @@
+{
+  "title": "Study 3 · Default prompt only",
+  "authors": "Thorne, Hegarty & Hepper (2021)",
+  "doi": "https://doi.org/10.1111/bjso.12422",
+  "paper": "https://oro.open.ac.uk/76552/1/bjso.12422.pdf",
+  "source": "https://osf.io/6yuae/",
+  "condition": "default",
+  "n": 45,
+  "screening": "Supplied extract: all original records in this condition, no multivariate-outlier exclusions. Not the paper’s final screened N=152 analysis.",
+  "csvSha256": "5240ec5ed0697d2d7197a71f9a6412d4fa451990a5eb42eb5259683f85a243de",
+  "radius": "r = 260 + (7 − mean) / 6 × 560",
+  "angle": "theta = −90° + (id − 1) × 137.50776405003785°",
+  "artwork": "Exact Felt Studio structure refinement V2 quilt selected by the user. Individual tiles are sampled from the authored quilt, preserving motifs, backing cloth, fibres and seams. Cloth overview uses the same artwork; no replacement motifs are generated.",
+  "clothImage": {
+    "url": "editorial-artist-cloth.png",
+    "width": 2400,
+    "height": 1181.1158798283263,
+    "source": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "crop": [
+      110,
+      460,
+      7100,
+      3900
+    ]
+  }
+}

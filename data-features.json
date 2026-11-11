@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "label": "Happiness",
+    "sourceVariable": "Happiness",
+    "image": "originals-01.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A picnic blanket, opened together.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.622222,
+      "sd": 0.575598,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "野餐毯",
+    "clothPosition": {
+      "x": 184.25455744619185,
+      "y": 160.16867913406435
+    }
+  },
+  {
+    "id": 2,
+    "label": "Caring",
+    "sourceVariable": "Caring",
+    "image": "originals-02.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A blanket that folds into care.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.377778,
+      "sd": 0.833636,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "毛毯",
+    "clothPosition": {
+      "x": 411.2614791682741,
+      "y": 149.67598682829242
+    }
+  },
+  {
+    "id": 3,
+    "label": "Trust",
+    "sourceVariable": "Trust",
+    "image": "originals-03.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A pocket, with room for what matters.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.733333,
+      "sd": 0.719848,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "外套内袋",
+    "clothPosition": {
+      "x": 632.1912118184772,
+      "y": 155.90129100448883
+    }
+  },
+  {
+    "id": 4,
+    "label": "Spend time together",
+    "sourceVariable": "Spend_time_together",
+    "image": "originals-04.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two cloth books, side by side.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.066667,
+      "sd": 0.96295,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "并排枕垫",
+    "clothPosition": {
+      "x": 858.3143297017642,
+      "y": 154.84962157700014
+    }
+  },
+  {
+    "id": 5,
+    "label": "Touching / Holding",
+    "sourceVariable": "Touching_Holding",
+    "image": "originals-05.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A pair of gloves, reaching towards each other.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.844444,
+      "sd": 0.952403,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "一双手套",
+    "clothPosition": {
+      "x": 1083.353646135075,
+      "y": 165.42673535597092
+    }
+  },
+  {
+    "id": 6,
+    "label": "Kissing",
+    "sourceVariable": "Kissing",
+    "image": "originals-06.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two pillowcases, close together.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.933333,
+      "sd": 1.156012,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "靠近的枕套",
+    "clothPosition": {
+      "x": 1311.240042502716,
+      "y": 164.15764805574008
+    }
+  },
+  {
+    "id": 7,
+    "label": "Support",
+    "sourceVariable": "Support",
+    "image": "originals-07.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A handkerchief held at the corner.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.444444,
+      "sd": 0.813398,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "翻开的衣服衬布",
+    "clothPosition": {
+      "x": 1535.0376643422098,
+      "y": 152.59469692846878
+    }
+  },
+  {
+    "id": 8,
+    "label": "Sexual activity",
+    "sourceVariable": "Sexual_activity",
+    "image": "originals-08.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A bedsheet with a soft seam.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.777778,
+      "sd": 0.926599,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "交叠床单",
+    "clothPosition": {
+      "x": 1772.1395238835753,
+      "y": 162.41174147349147
+    }
+  },
+  {
+    "id": 9,
+    "label": "Romance (i.e., candlelit dinners)",
+    "sourceVariable": "Romance_ie_Candlelit_dinners",
+    "image": "originals-09.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A tent made of two joined planes.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.222222,
+      "sd": 1.277229,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "立起的布餐巾",
+    "clothPosition": {
+      "x": 1991.8246968563483,
+      "y": 165.1227274581983
+    }
+  },
+  {
+    "id": 10,
+    "label": "Kindness / Thoughtfulness",
+    "sourceVariable": "Kindness_thoughtfulness",
+    "image": "originals-10.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A carefully folded handkerchief.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.066667,
+      "sd": 0.986269,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "仔细收好的手帕",
+    "clothPosition": {
+      "x": 2211.43744038081,
+      "y": 157.0362621974722
+    }
+  },
+  {
+    "id": 11,
+    "label": "Commitment",
+    "sourceVariable": "Commitment",
+    "image": "originals-11.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A button fastening a shared wrap.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.422222,
+      "sd": 0.753443,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "衣襟与扣眼",
+    "clothPosition": {
+      "x": 182.06363214504785,
+      "y": 381.7434082551429
+    }
+  },
+  {
+    "id": 12,
+    "label": "Smiles / Laughter",
+    "sourceVariable": "Smiles_Laughter",
+    "image": "originals-12.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A cuff that moves with laughter.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.266667,
+      "sd": 0.80904,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "收口的衣袖",
+    "clothPosition": {
+      "x": 402.4086683994116,
+      "y": 367.56683624535134
+    }
+  },
+  {
+    "id": 13,
+    "label": "Passion",
+    "sourceVariable": "Passion",
+    "image": "originals-13.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A layered skirt in motion.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.088889,
+      "sd": 0.733058,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "多层摆动的裙摆",
+    "clothPosition": {
+      "x": 628.432124135595,
+      "y": 369.5247449643918
+    }
+  },
+  {
+    "id": 14,
+    "label": "Do special things for each other (e.g., gifts)",
+    "sourceVariable": "Do_special_things_for_each_other_eg_gifts",
+    "image": "originals-14.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A gift, tied just for you.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.155556,
+      "sd": 1.166883,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "打结的包礼布",
+    "clothPosition": {
+      "x": 866.7233125066352,
+      "y": 380.181656233627
+    }
+  },
+  {
+    "id": 15,
+    "label": "Companionship / Friendship",
+    "sourceVariable": "Companionship_Friendship",
+    "image": "originals-15.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two scarves hanging side by side.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.377778,
+      "sd": 0.747386,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "并排的围巾",
+    "clothPosition": {
+      "x": 1085.298694920494,
+      "y": 371.1462103877997
+    }
+  },
+  {
+    "id": 16,
+    "label": "Communication",
+    "sourceVariable": "Communication",
+    "image": "originals-16.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A buckle connecting separate pieces.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.688889,
+      "sd": 0.468179,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "穿过布袢的布带",
+    "clothPosition": {
+      "x": 1303.4251029034656,
+      "y": 372.20508109821907
+    }
+  },
+  {
+    "id": 17,
+    "label": "Fidelity / Loyalty",
+    "sourceVariable": "Fidelity_loyalty",
+    "image": "originals-17.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two wristbands, worn over time.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.222222,
+      "sd": 1.222681,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "保留旧边的围巾",
+    "clothPosition": {
+      "x": 1535.4128776286623,
+      "y": 373.74162497255116
+    }
+  },
+  {
+    "id": 18,
+    "label": "Acceptance / Tolerance",
+    "sourceVariable": "Acceptance_tolerance",
+    "image": "originals-18.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A bag that holds different scraps.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.177778,
+      "sd": 1.028876,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "盛着不同布片的宽口袋",
+    "clothPosition": {
+      "x": 1764.4219552869436,
+      "y": 377.9433533443087
+    }
+  },
+  {
+    "id": 19,
+    "label": "Chemistry",
+    "sourceVariable": "Chemistry",
+    "image": "originals-19.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two pieces meeting along a seam.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.8,
+      "sd": 0.967659,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "两种织物接触的边缘",
+    "clothPosition": {
+      "x": 1989.2320637501396,
+      "y": 380.2753633228262
+    }
+  },
+  {
+    "id": 20,
+    "label": "Mutuality",
+    "sourceVariable": "Mutuality",
+    "image": "originals-20.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "One long ribbon, folded together.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.711111,
+      "sd": 1.036213,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "共用的一条围巾",
+    "clothPosition": {
+      "x": 2208.431152724209,
+      "y": 370.71556105394137
+    }
+  },
+  {
+    "id": 21,
+    "label": "Affection",
+    "sourceVariable": "Affection",
+    "image": "originals-21.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A small ribbon worn near the heart.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.177778,
+      "sd": 0.716332,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "为对方织的围巾",
+    "clothPosition": {
+      "x": 170.56205211657394,
+      "y": 593.3416343264262
+    }
+  },
+  {
+    "id": 22,
+    "label": "Intimacy",
+    "sourceVariable": "Intimacy",
+    "image": "originals-22.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A quilt with one corner lifted.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.311111,
+      "sd": 0.792643,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "掀起一角的拼布被",
+    "clothPosition": {
+      "x": 405.7912953178062,
+      "y": 588.4683407638398
+    }
+  },
+  {
+    "id": 23,
+    "label": "Caresses",
+    "sourceVariable": "Caresses",
+    "image": "originals-23.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A soft cloth made for touch.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.511111,
+      "sd": 1.100046,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "顺着绒面轻抚的布",
+    "clothPosition": {
+      "x": 624.1872439177957,
+      "y": 601.3753527218355
+    }
+  },
+  {
+    "id": 24,
+    "label": "Miss other / Want to be together",
+    "sourceVariable": "Miss_other_want_to_be_together",
+    "image": "originals-24.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A familiar sleeve opening.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.888889,
+      "sd": 0.934739,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "留下的空袖口",
+    "clothPosition": {
+      "x": 858.1334719409402,
+      "y": 593.1644157378435
+    }
+  },
+  {
+    "id": 25,
+    "label": "Attachment / Bond",
+    "sourceVariable": "Attachment_Bond",
+    "image": "originals-25.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two shoelaces, gently tied.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.022222,
+      "sd": 1.137958,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "两条布带结成的蝴蝶结",
+    "clothPosition": {
+      "x": 1091.0980581243357,
+      "y": 593.7081351108662
+    }
+  },
+  {
+    "id": 26,
+    "label": "Share thoughts and secrets",
+    "sourceVariable": "Share_thoughts_and_secrets",
+    "image": "originals-26.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A cup-shaped pocket for shared thoughts.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.955556,
+      "sd": 1.065056,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "露出内衬的布包",
+    "clothPosition": {
+      "x": 1305.610513440116,
+      "y": 586.1688221735534
+    }
+  },
+  {
+    "id": 27,
+    "label": "Understanding",
+    "sourceVariable": "Understanding",
+    "image": "originals-27.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two cloths meeting at a wavering seam.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.2,
+      "sd": 0.919486,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "沿互补边缝合的拼布",
+    "clothPosition": {
+      "x": 1528.4239445564513,
+      "y": 593.5443703793154
+    }
+  },
+  {
+    "id": 28,
+    "label": "Beauty",
+    "sourceVariable": "Beauty",
+    "image": "originals-28.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A stitched border for a quiet reflection.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 4.044444,
+      "sd": 1.5805,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "带镂空花边的织物",
+    "clothPosition": {
+      "x": 1754.9244452111504,
+      "y": 600.9694741880407
+    }
+  },
+  {
+    "id": 29,
+    "label": "Honesty",
+    "sourceVariable": "Honesty",
+    "image": "originals-29.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A transparent layer with nothing hidden.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.355556,
+      "sd": 0.802144,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "透明纱布的开放叠层",
+    "clothPosition": {
+      "x": 1990.6458729217834,
+      "y": 592.1641136272132
+    }
+  },
+  {
+    "id": 30,
+    "label": "Arguments",
+    "sourceVariable": "Arguments",
+    "image": "originals-30.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A cloth pulled in opposite directions.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 4.355556,
+      "sd": 1.464047,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "向相反方向被拉动的桌布",
+    "clothPosition": {
+      "x": 2220.1772471316085,
+      "y": 597.4654069806683
+    }
+  },
+  {
+    "id": 31,
+    "label": "Excitement",
+    "sourceVariable": "Excitement",
+    "image": "originals-31.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Ribbons unfurling in celebration.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.755556,
+      "sd": 0.933117,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "甩开的彩色丝带",
+    "clothPosition": {
+      "x": 187.97361938566587,
+      "y": 811.0860085703946
+    }
+  },
+  {
+    "id": 32,
+    "label": "Daydreaming / Thinking of other",
+    "sourceVariable": "Daydreaming_thinking_of_other",
+    "image": "originals-32.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Light slipping between curtain folds.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 4.933333,
+      "sd": 1.053134,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "被风轻轻掀动的窗纱",
+    "clothPosition": {
+      "x": 409.2891138362968,
+      "y": 813.23567825831
+    }
+  },
+  {
+    "id": 33,
+    "label": "Sexual attraction / Desire",
+    "sourceVariable": "Sexual_attraction_desire",
+    "image": "originals-33.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A camisole with a delicate neckline.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.0,
+      "sd": 0.904534,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "贴身衣物的领口与肩带",
+    "clothPosition": {
+      "x": 629.4262698253259,
+      "y": 813.1593303854155
+    }
+  },
+  {
+    "id": 34,
+    "label": "Jealousy",
+    "sourceVariable": "Jealousy",
+    "image": "originals-34.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A curtain holding part of the view.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 3.333333,
+      "sd": 1.665151,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "遮住一部分视线的窗帘",
+    "clothPosition": {
+      "x": 867.8163612828165,
+      "y": 807.3720710327798
+    }
+  },
+  {
+    "id": 35,
+    "label": "Fun",
+    "sourceVariable": "Fun",
+    "image": "originals-35.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A small path of playful cloth shapes.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.2,
+      "sd": 0.756787,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "有路线的布制游戏垫",
+    "clothPosition": {
+      "x": 1091.634425488324,
+      "y": 814.6281979178865
+    }
+  },
+  {
+    "id": 36,
+    "label": "Security",
+    "sourceVariable": "Security",
+    "image": "originals-36.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A pocket with a closing flap.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.844444,
+      "sd": 1.278414,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "有翻盖保护的口袋",
+    "clothPosition": {
+      "x": 1316.9577015290927,
+      "y": 819.0510840563472
+    }
+  },
+  {
+    "id": 37,
+    "label": "References to gender / Sexuality",
+    "sourceVariable": "References_to_gender_Sexuality",
+    "image": "originals-37.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two collars without a prescribed wearer.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 3.866667,
+      "sd": 1.765837,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "可变穿法的衬衫领口",
+    "clothPosition": {
+      "x": 1536.4651515804574,
+      "y": 816.3241870186523
+    }
+  },
+  {
+    "id": 38,
+    "label": "Respect",
+    "sourceVariable": "Respect",
+    "image": "originals-38.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two mats, each with its own place.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.6,
+      "sd": 0.780443,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "保留边界的两块餐垫",
+    "clothPosition": {
+      "x": 1756.2424298171754,
+      "y": 815.326638161961
+    }
+  },
+  {
+    "id": 39,
+    "label": "Shared interests",
+    "sourceVariable": "Shared_interests",
+    "image": "originals-39.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A folded piece of shared patchwork.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 4.8,
+      "sd": 1.272078,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "一起制作的拼布",
+    "clothPosition": {
+      "x": 1983.443547482836,
+      "y": 808.1397448882599
+    }
+  },
+  {
+    "id": 40,
+    "label": "Unity / Completeness / Fulfillment",
+    "sourceVariable": "Unity_completeness_fulfillment",
+    "image": "originals-40.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Different scraps joined into one cloth.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.822222,
+      "sd": 1.093137,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "拼合成整体的被面",
+    "clothPosition": {
+      "x": 2221.650070029229,
+      "y": 806.9804367269539
+    }
+  },
+  {
+    "id": 41,
+    "label": "Obsession / Infatuation",
+    "sourceVariable": "Obsession_infatuation",
+    "image": "originals-41.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A spiral, returning to its centre.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 3.444444,
+      "sd": 1.672716,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "反复缠绕的长围巾",
+    "clothPosition": {
+      "x": 174.51718229675018,
+      "y": 1031.8631615288907
+    }
+  },
+  {
+    "id": 42,
+    "label": "Want to please other",
+    "sourceVariable": "Want_to_please_other",
+    "image": "originals-42.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "An apron made with care.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 5.555556,
+      "sd": 1.03475,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "带口袋和系带的围裙",
+    "clothPosition": {
+      "x": 403.97902279354787,
+      "y": 1029.9253836595926
+    }
+  },
+  {
+    "id": 43,
+    "label": "Warmth",
+    "sourceVariable": "Warmth",
+    "image": "originals-43.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A towel, warmed by use.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.022222,
+      "sd": 0.916736,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "刚烘干的毛巾",
+    "clothPosition": {
+      "x": 626.5993632696466,
+      "y": 1028.2431154259975
+    }
+  },
+  {
+    "id": 44,
+    "label": "Comfortable",
+    "sourceVariable": "Comfortable",
+    "image": "originals-44.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "An old sleeve, made comfortable.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 6.266667,
+      "sd": 1.031327,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "穿松了的睡衣袖口",
+    "clothPosition": {
+      "x": 867.7565034235055,
+      "y": 1028.3888792585578
+    }
+  },
+  {
+    "id": 45,
+    "label": "Marriage",
+    "sourceVariable": "Marriage",
+    "image": "originals-45.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "Two bows and a small beginning.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 4.266667,
+      "sd": 1.899761,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "两条仪式布带",
+    "clothPosition": {
+      "x": 1091.1154491538534,
+      "y": 1028.272656228959
+    }
+  },
+  {
+    "id": 46,
+    "label": "Nervousness",
+    "sourceVariable": "Nervousness",
+    "image": "originals-46.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A handkerchief held between fingers.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 3.533333,
+      "sd": 1.391533,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "手指攥住的衣角",
+    "clothPosition": {
+      "x": 1320.2329346380275,
+      "y": 1033.7556479061736
+    }
+  },
+  {
+    "id": 47,
+    "label": "Public displays of affection",
+    "sourceVariable": "Public_Displays_of_Affection",
+    "image": "originals-47.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "An apron and shorts on a shared line.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 3.755556,
+      "sd": 1.400577,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "挂在室外的两件贴身衣物",
+    "clothPosition": {
+      "x": 1537.3965426983234,
+      "y": 1036.0160491258598
+    }
+  },
+  {
+    "id": 48,
+    "label": "Changes in weight / Diet",
+    "sourceVariable": "Changes_in_Weight_Diet",
+    "image": "originals-48.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A belt with room to adjust.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 2.822222,
+      "sd": 1.682651,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "可调节布带的腰口",
+    "clothPosition": {
+      "x": 1756.1333563593241,
+      "y": 1028.5849791713094
+    }
+  },
+  {
+    "id": 49,
+    "label": "Submission / Obedience to other",
+    "sourceVariable": "Submission_obedience_to_other",
+    "image": "originals-49.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "The gathered mouth of a cloth bag.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 3.422222,
+      "sd": 1.827677,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "束紧的布袋抽绳",
+    "clothPosition": {
+      "x": 1986.635734023747,
+      "y": 1024.8936445838553
+    }
+  },
+  {
+    "id": 50,
+    "label": "Guilt / Embarrassment / Shame",
+    "sourceVariable": "Guilt_Embarrassment_Shame",
+    "image": "originals-50.png",
+    "originalAsset": "felt-studio/output/v2-presentation-2026-11-05/02-Love-Woven-Together-Felt-V2.png",
+    "imageSha256": "e2bea1ab9a6d1c7015859c27d3c42b4a23100aa7f9b672a017950016704670dc",
+    "interpretation": "A handkerchief folded out of sight.",
+    "study": {
+      "condition": "default",
+      "n": 45,
+      "mean": 2.933333,
+      "sd": 1.452271,
+      "scale": [
+        1,
+        7
+      ]
+    },
+    "status": "verified supplied extract",
+    "artEdition": "Felt Studio V2 · structure refinement",
+    "artistObject": "藏在遮盖层下的手帕",
+    "clothPosition": {
+      "x": 2228.2926922724164,
+      "y": 1033.6601917970795
+    }
+  }
+]
