@@ -2,7 +2,7 @@
 
 An interactive MA creative project exploring love through textiles.
 
-Visitors choose three words, create a fabric using the editor, explore fifty artist textile studies, and preview their own work on clothing. The editor includes all fifty original editable studies, 196 cut patterns, twelve layers, free colour selection, fabric textures, cutouts, stitches and handmade details.
+Visitors choose three words, create a fabric using the editor, explore fifty artist textile studies, and preview a personalized patch kit to stitch by hand and give as a gift. The editor includes all fifty original editable studies, 196 cut patterns, twelve layers, free colour selection, fabric textures, cutouts, stitches and handmade details.
 
 ## Visit
 
@@ -18,7 +18,7 @@ Open http://127.0.0.1:8876/ . No build step or package installation is required.
 
 ## Storage
 
-Drafts and contributions are stored only in each visitor’s browser. They are not shared between devices or visitors. Download PNG or SVG copies from the preview page. Clothing ordering is an interactive concept with no payment or order submission.
+Drafts and contributions are stored only in each visitor’s browser. They are not shared between devices or visitors. Download PNG or SVG copies from the preview page. Patch kits are shown as customizable previews. Visitors can download the kit preview; no order or payment is submitted.
 
 ## Project files
 

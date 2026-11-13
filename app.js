@@ -149,7 +149,7 @@ function render(){if(state.renderer==='felt-lite-v1'){state.layers.forEach(migra
 let restoredDraft=null;try{restoredDraft=JSON.parse(localStorage.getItem("feeling-fabric-draft-v3")||"null")}catch{}
 let undoStack=[],redoStack=[],historyReady=false,restoringHistory=false;
 let currentPage='memory',chosen=[],record=null,toastTimer,saveKey=crypto.randomUUID();
-const pages=['memory','words','studio','result','archive','wear'];
+const pages=['memory','words','studio','result','archive','kit'];
 const baseLayer={...shapeDefaults,...embroideryDefaults,id:1,material:'linen',shape:'organic',color:'#d5a6af',threadColor:'#b47e86',accentColor:'#ead6a4',x:425,y:450,size:160,width:130,height:110,rotation:-18,opacity:90,density:18,tension:8,fold:0,fray:24,edge:18,lobes:5,stitch:'running',stitchLayout:'border',visible:true};
 function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),3600)}
 function show(page){pages.forEach(p=>$(p).hidden=p!==page);currentPage=page;document.body.dataset.page=page;document.querySelectorAll('[data-step]').forEach(n=>n.classList.toggle('active',+n.dataset.step===Math.min(3,pages.indexOf(page))));window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});if(page==='studio'){if(typeof contributions!=='undefined'&&contributions.some(w=>w.id===saveKey)){saveKey=crypto.randomUUID();record=null}sync();renderSelectedWords()}if(page==='archive')drawAtlas();}
@@ -339,7 +339,7 @@ function focusPoint(p,size=1100){const h=size/mapAspect();atlasView={x:p.x-size/
 function detailText(tag,text,parent,cls){const n=document.createElement(tag);n.textContent=text;if(cls)n.className=cls;parent.append(n);return n}
 function relatedWords(ids){return ids.map(id=>features.find(f=>f.id===id)?.label||'Missing '+id)}
 function detailWord(id){const f=features.find(f=>f.id===id),box=$('map-detail');box.replaceChildren();detailText('p','ARTIST’S ORIGINAL · '+String(id).padStart(2,'0'),box,'eyebrow');detailText('h3',f.label,box);const im=document.createElement('img');im.src=f.image;im.alt='Artist interpretation of '+f.label;box.append(im);detailText('p',f.interpretation,box);detailText('p','Original-study rating: '+f.study.mean.toFixed(3)+' / 7',box,'data-value');const works=sortedWorks().filter(w=>w.wordIds.includes(id));detailText('h4',works.length+' '+(works.length===1?'selection':'selections')+' in this browser',box);detailText('p','Participation, not an importance score.',box,'muted');for(const w of works){const b=document.createElement('button');b.className='related-work';const image=artworkImage(w.svg,w.title);b.append(image,document.createTextNode(w.title));b.onclick=()=>selectWork(w.id,true);box.append(b)}if(!works.length)detailText('p','No participant fabrics yet. Yours could be the first.',box)}
-function detailWork(id){const w=contributions.find(x=>x.id===id);if(!w)return;const box=$('map-detail');box.replaceChildren();detailText('p','PARTICIPANT FABRIC',box,'eyebrow');detailText('h3',w.title,box);box.append(artworkImage(w.svg,w.title));const list=document.createElement('div');list.className='selected-strip';relatedWords(w.wordIds).forEach(t=>detailText('span',t,list,'tag'));box.append(list);if(w.note)detailText('p',w.note,box);detailText('p','Saved '+new Date(w.createdAt).toLocaleString('en-US')+' · this browser only',box,'muted');const b=document.createElement('button');b.textContent='Download this fabric ↓';b.onclick=()=>{const previous=record;record=w;exportWork('png');record=previous};box.append(b);const wear=document.createElement('button');wear.textContent='See it on clothing ↗';wear.className='primary';wear.onclick=()=>openGarment(w,'archive');box.append(wear)}
+function detailWork(id){const w=contributions.find(x=>x.id===id);if(!w)return;const box=$('map-detail');box.replaceChildren();detailText('p','PARTICIPANT FABRIC',box,'eyebrow');detailText('h3',w.title,box);box.append(artworkImage(w.svg,w.title));const list=document.createElement('div');list.className='selected-strip';relatedWords(w.wordIds).forEach(t=>detailText('span',t,list,'tag'));box.append(list);if(w.note)detailText('p',w.note,box);detailText('p','Saved '+new Date(w.createdAt).toLocaleString('en-US')+' · this browser only',box,'muted');const b=document.createElement('button');b.textContent='Download this fabric ↓';b.onclick=()=>{const previous=record;record=w;exportWork('png');record=previous};box.append(b);const wear=document.createElement('button');wear.textContent='Create a patch kit ↗';wear.className='primary';wear.onclick=()=>openPatchKit(w,'archive');box.append(wear)}
 function selectWord(id){atlasHover=null;atlasSelection={type:'word',id};drawAtlas();detailWord(id);$('collective-map').querySelector('[data-feature-id="'+id+'"]')?.focus({preventScroll:true})}
 function selectWork(id,locate=false){const all=sortedWorks(),index=all.findIndex(w=>w.id===id);if(index<0)return toast('That fabric is not saved in this browser.');atlasGroup=Math.floor(index/atlasPageSize);atlasHover=null;atlasSelection={type:'work',id};if(currentPage!=='archive')show('archive');else drawAtlas();detailWork(id);if(locate){const pos=workPositions().find(p=>p.work.id===id);focusPoint(pos,1600);const node=$('collective-map').querySelector('[data-work-id="'+id+'"]');node?.classList.add('newly-sewn');node?.focus({preventScroll:true})}}
 function focusMyFabric(){if(!lastWorkId||!contributions.some(w=>w.id===lastWorkId)){show('archive');toast('No fabric saved here yet. Choose three words to begin.');return}selectWork(lastWorkId,true)}
@@ -377,37 +377,96 @@ $('view-cloth').onclick=()=>switchAtlas('cloth');$('view-data').onclick=()=>swit
 $('map-fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await $('archive').requestFullscreen()}catch{toast('The fabric already fills this browser window.')}fitMap()};
 new ResizeObserver(()=>{if(currentPage==='archive')fitMap()}).observe($('map-viewport'));
 
-/* Garment concepts are local previews, independent of collective publication. */
-let garmentSource=null,garmentReturn='result';
-let garmentOptions={style:'tee',colour:'#f4f0e5',colourName:'Oat milk',size:'M',placement:'centre',scale:100};
-try{const saved=JSON.parse(localStorage.getItem('feeling-fabric-garment-options')||'null');if(saved&&['tee','sweatshirt'].includes(saved.style)&&['#f4f0e5','#b8ced6','#465b51'].includes(saved.colour)&&['XS','S','M','L','XL','XXL'].includes(saved.size)&&['centre','heart'].includes(saved.placement)&&saved.scale>=70&&saved.scale<=130)garmentOptions=saved}catch{}
-function openGarment(work=null,from='result'){
- garmentSource=work?{id:work.id,svg:work.svg,title:work.title,wordIds:[...work.wordIds]}:{id:saveKey,svg:svgString(),title:state.title.trim()||'Your fabric',wordIds:[...chosen]};
- garmentReturn=from;$('wear-title').textContent=garmentSource.title;$('wear-words').replaceChildren();relatedWords(garmentSource.wordIds).forEach(t=>detailText('span',t,$('wear-words'),'tag'));
- for(const key of ['style','size','placement','scale'])$('garment-'+key).value=garmentOptions[key];
- $('order-review').hidden=true;$('order-status').textContent='';show('wear');drawGarment();
+/* A single-page patch-kit preview made from the participant's own artwork. */
+let kitSource=null,kitReturn='result';
+let kitOptions={size:'12',fabric:'felt',message:''};
+try{
+ const saved=JSON.parse(localStorage.getItem('feeling-fabric-patch-kit-v1')||'null');
+ if(saved&&['8','12','16'].includes(saved.size)&&['felt','cotton'].includes(saved.fabric))kitOptions={size:saved.size,fabric:saved.fabric,message:typeof saved.message==='string'?saved.message.slice(0,120):''};
+}catch{}
+
+function openPatchKit(work=null,from='result'){
+ kitSource=work?{id:work.id,svg:work.svg,title:work.title,wordIds:[...work.wordIds],composition:work.composition}:{id:saveKey,svg:svgString(),title:state.title.trim()||'Your fabric',wordIds:[...chosen],composition:structuredClone(state)};
+ kitReturn=from;
+ $('kit-title').textContent=kitSource.title;
+ $('kit-words').replaceChildren();
+ relatedWords(kitSource.wordIds).forEach(t=>detailText('span',t,$('kit-words'),'tag'));
+ $('kit-size').value=kitOptions.size;$('kit-fabric').value=kitOptions.fabric;$('kit-message').value=kitOptions.message;
+ $('kit-status').textContent='';show('kit');drawPatchKit();
 }
-function printArtwork(svg){const doc=new DOMParser().parseFromString(svg,'image/svg+xml');doc.querySelectorAll('#canvas-bg,[data-editor]').forEach(n=>n.remove());return new XMLSerializer().serializeToString(doc.documentElement)}
-function drawGarment(){
- const svg=$('garment-preview');svg.replaceChildren();const long=garmentOptions.style==='sweatshirt',colour=garmentOptions.colour;
- const defs=sn('defs',{},svg),shade=sn('linearGradient',{id:'garment-shade',x1:'0%',x2:'100%',y1:'0%',y2:'0%'},defs);
- for(const [offset,opacity] of [['0%',.13],['22%',0],['73%',0],['100%',.14]])sn('stop',{offset,'stop-color':'#263c31','stop-opacity':opacity},shade);
- const pattern=sn('pattern',{id:'garment-weave',width:4,height:4,patternUnits:'userSpaceOnUse'},defs);sn('path',{d:'M0 0H4M0 0V4',stroke:'#fff','stroke-width':.5,opacity:.24},pattern);
- const shape=long?'M253 145L175 172L113 200L43 555L123 580L194 327L189 680Q350 698 511 680L506 327L577 580L657 555L587 200L525 172L447 145Q350 180 253 145Z':'M253 145L178 170L65 260L126 365L195 320L190 680Q350 695 510 680L505 320L574 365L635 260L522 170L447 145Q350 180 253 145Z';
- sn('path',{d:shape,fill:colour,stroke:'#778579','stroke-width':1.3},svg);sn('path',{d:shape,fill:'url(#garment-shade)'},svg);sn('path',{d:shape,fill:'url(#garment-weave)'},svg);
- sn('path',{d:'M253 145Q350 190 447 145L438 166Q350 222 262 166Z',fill:colour,stroke:'#829083','stroke-width':1},svg);
- sn('path',{d:'M262 163Q350 204 438 163M198 660Q350 675 502 660',fill:'none',stroke:'#839080','stroke-width':1.2,'stroke-dasharray':'3 3',opacity:.65},svg);
- if(long){for(const d of ['M46 537L128 561','M572 561L654 537','M194 651Q350 670 506 651'])sn('path',{d,fill:'none',stroke:'#839080','stroke-width':1.3,opacity:.55},svg)}else{sn('path',{d:'M75 268L132 351M568 351L625 268',fill:'none',stroke:'#839080','stroke-dasharray':'3 3',opacity:.6},svg)}
- sn('path',{d:'M198 322Q214 470 207 631M501 322Q483 470 494 631',stroke:'#687c6c','stroke-width':2,opacity:.09,fill:'none'},svg);
- const heart=garmentOptions.placement==='heart',size=(heart?120:235)*garmentOptions.scale/100,cx=heart?423:350,cy=heart?300:355;
- sn('image',{id:'garment-print',href:'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(printArtwork(garmentSource.svg)),x:cx-size/2,y:cy-size/2,width:size,height:size,preserveAspectRatio:'xMidYMid meet'},svg);
- $('garment-scale-label').textContent=garmentOptions.scale+'%';$('garment-colour-name').textContent=garmentOptions.colourName;
- document.querySelectorAll('[data-garment-colour]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.garmentColour===colour)));
+
+function kitArtwork(svg){
+ const doc=new DOMParser().parseFromString(svg,'image/svg+xml');
+ doc.querySelectorAll('#canvas-bg,[data-editor]').forEach(n=>n.remove());
+ return new XMLSerializer().serializeToString(doc.documentElement);
 }
-function updateGarment(){for(const key of ['style','size','placement'])garmentOptions[key]=$('garment-'+key).value;garmentOptions.scale=+$('garment-scale').value;try{localStorage.setItem('feeling-fabric-garment-options',JSON.stringify(garmentOptions))}catch{}$('order-review').hidden=true;$('order-status').textContent='';drawGarment()}
-for(const key of ['style','size','placement','scale'])$('garment-'+key).addEventListener('input',updateGarment);
-document.querySelectorAll('[data-garment-colour]').forEach(b=>b.onclick=()=>{garmentOptions.colour=b.dataset.garmentColour;garmentOptions.colourName=b.getAttribute('aria-label');updateGarment()});
-$('wear-fabric').onclick=()=>openGarment();$('wear-back').onclick=()=>show(garmentReturn);
-$('prepare-order').onclick=()=>{$('order-review').hidden=false;$('order-summary').textContent=[garmentOptions.style==='tee'?'Everyday T-shirt':'Soft sweatshirt',garmentOptions.colourName,'Size '+garmentOptions.size,garmentOptions.placement==='heart'?'Over the heart':'Centre chest','Print scale '+garmentOptions.scale+'%'].join(' · ');$('order-review').scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})};
-$('save-order').onclick=()=>{try{localStorage.setItem('feeling-fabric-order-concept',JSON.stringify({id:crypto.randomUUID(),createdAt:new Date().toISOString(),status:'concept-only',fabric:garmentSource,garment:{...garmentOptions}}));$('order-status').textContent='Saved on this device. No order has been sent and no payment has been taken.'}catch{$('order-status').textContent='Could not save on this device. You can download the look instead.'}};
-$('download-garment').onclick=async()=>{const button=$('download-garment');button.disabled=true;try{const clone=$('garment-preview').cloneNode(true);clone.setAttribute('width','1400');clone.setAttribute('height','1600');const image=artworkImage(new XMLSerializer().serializeToString(clone),'Garment preview');await image.decode();const c=document.createElement('canvas');c.width=1400;c.height=1600;const ctx=c.getContext('2d');ctx.fillStyle='#f3f2eb';ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(image,0,0,1400,1600);const blob=await new Promise(r=>c.toBlob(r,'image/png'));if(!blob)throw Error();const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download='Feeling-Fabric-Garment-Preview.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000)}catch{toast('Could not download this preview. Please try again.')}finally{button.disabled=false}};
+function kitPalette(){
+ const layers=kitSource?.composition?.layers||[];
+ const colors=[...new Set(layers.filter(l=>l.visible!==false).map(l=>l.color).filter(c=>/^#[0-9a-f]{6}$/i.test(c)))];
+ return [colors[0]||'#a6c6cf',colors[1]||'#d5a6af',colors[2]||'#ead6a4'];
+}
+function kitText(svg,text,x,y,size=18,color='#45584d',extra={}){
+ const n=sn('text',{x,y,fill:color,'font-family':'Arial, sans-serif','font-size':size,...extra},svg);n.textContent=text;return n;
+}
+function kitMessageLines(text){
+ const lines=[];let line='';
+ for(const word of text.trim().split(/\s+/)){if(!word)continue;if(word.length>27){if(line){lines.push(line);line='';}for(let i=0;i<word.length;i+=27)lines.push(word.slice(i,i+27));continue;}if((line+' '+word).trim().length>27){lines.push(line);line=word;}else line=(line+' '+word).trim();}
+ if(line)lines.push(line);return lines.slice(0,4);
+}
+function drawPatchKit(){
+ const svg=$('kit-preview');svg.replaceChildren();
+ const colors=kitPalette(),cotton=kitOptions.fabric==='cotton';
+ const defs=sn('defs',{},svg),weave=sn('pattern',{id:'kit-weave',width:cotton?6:4,height:cotton?6:4,patternUnits:'userSpaceOnUse'},defs);
+ sn('path',{d:cotton?'M0 0H6M0 0V6':'M0 1L4 3M1 0L3 4',fill:'none',stroke:'#fffdf1','stroke-width':cotton?.7:.5,opacity:.45},weave);
+ sn('rect',{x:45,y:45,width:710,height:730,rx:24,fill:'#fffcf4',stroke:'#c4c6b5','stroke-width':1.5},svg);
+ kitText(svg,'FEELING FABRIC / PATCH KIT',85,100,17);
+ kitText(svg,'Your design. Your stitches. Your gift.',85,133,23,'#344b42',{'font-family':'Georgia, serif'});
+ sn('rect',{x:90,y:165,width:350,height:355,rx:8,fill:'#e9e4d5'},svg);
+ sn('rect',{x:90,y:165,width:350,height:355,rx:8,fill:'url(#kit-weave)'},svg);
+ const size={8:215,12:270,16:310}[kitOptions.size];
+ sn('image',{href:'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(kitArtwork(kitSource.svg)),x:265-size/2,y:342-size/2,width:size,height:size,preserveAspectRatio:'xMidYMid meet'},svg);
+ kitText(svg,'YOUR PERSONAL PATTERN',90,550,14);
+ kitText(svg,kitOptions.size+' cm patch · '+(cotton?'cotton':'felt')+' pieces',90,577,19);
+ kitText(svg,'FABRIC PIECES',490,181,14);
+ for(let i=0;i<3;i++){
+  const x=492+i*49,y=205+i*21;
+  sn('path',{d:`M${x} ${y}L${x+92} ${y-7}L${x+105} ${y+92}L${x+3} ${y+100}Z`,fill:colors[i],stroke:'#839083','stroke-width':1},svg);
+  sn('path',{d:`M${x} ${y}L${x+92} ${y-7}L${x+105} ${y+92}L${x+3} ${y+100}Z`,fill:'url(#kit-weave)'},svg);
+ }
+ kitText(svg,'MATCHING THREAD + NEEDLE',490,371,13);
+ const thread=(kitSource.composition?.layers||[]).find(l=>/^#[0-9a-f]{6}$/i.test(l.threadColor||''))?.threadColor||'#a57e83';
+ sn('rect',{x:497,y:405,width:77,height:85,rx:8,fill:thread},svg);
+ sn('ellipse',{cx:535,cy:405,rx:45,ry:10,fill:'#d9c8a4',stroke:'#a4997d'},svg);
+ sn('ellipse',{cx:535,cy:490,rx:45,ry:10,fill:'#d9c8a4',stroke:'#a4997d'},svg);
+ for(let i=0;i<11;i++)sn('path',{d:`M500 ${414+i*6} Q535 ${418+i*6} 571 ${414+i*6}`,stroke:'#fff8e2','stroke-width':.9,opacity:.4,fill:'none'},svg);
+ sn('path',{d:'M665 396L608 506',stroke:'#7b8580','stroke-width':3,'stroke-linecap':'round'},svg);
+ sn('ellipse',{cx:659,cy:406,rx:3,ry:7,fill:'none',stroke:'#7b8580','stroke-width':1.5,transform:'rotate(27 659 406)'},svg);
+ sn('path',{d:'M659 402Q715 416 690 477Q670 522 616 512',stroke:thread,'stroke-width':2,fill:'none'},svg);
+ sn('rect',{x:90,y:615,width:240,height:100,rx:5,fill:'#e8e0ce',stroke:'#c1bba7'},svg);
+ sn('rect',{x:90,y:615,width:240,height:100,rx:5,fill:'url(#kit-weave)'},svg);
+ kitText(svg,'BACKING + STITCH GUIDE',104,645,13);
+ sn('path',{d:'M111 673H309',fill:'none',stroke:'#85977f','stroke-width':2,'stroke-dasharray':'7 7'},svg);
+ sn('path',{d:'M112 688l10-10 10 10 10-10 10 10 10-10 10 10',fill:'none',stroke:'#85977f','stroke-width':1.6},svg);
+ sn('rect',{x:370,y:580,width:337,height:151,rx:4,fill:'#f6f0e5',stroke:'#d3c4b5'},svg);
+ kitText(svg,'MADE FOR YOU',391,611,14,'#9b737b');
+ kitMessageLines(kitOptions.message||'A little piece of my love, stitched by hand.').forEach((line,i)=>kitText(svg,line,391,642+i*22,16));
+ kitText(svg,'Sew it somewhere meaningful. Give it with love.',400,820,22,'#45584d',{'text-anchor':'middle','font-family':'Georgia, serif'});
+}
+function updatePatchKit(){
+ kitOptions={size:$('kit-size').value,fabric:$('kit-fabric').value,message:$('kit-message').value.slice(0,120)};
+ try{localStorage.setItem('feeling-fabric-patch-kit-v1',JSON.stringify(kitOptions));}catch{}
+ $('kit-status').textContent='';drawPatchKit();
+}
+for(const id of ['kit-size','kit-fabric','kit-message'])$(id).addEventListener('input',updatePatchKit);
+$('make-kit').onclick=()=>openPatchKit();$('kit-back').onclick=()=>show(kitReturn);
+$('download-kit').onclick=async()=>{
+ const button=$('download-kit');button.disabled=true;
+ try{
+  const clone=$('kit-preview').cloneNode(true);clone.setAttribute('width','1600');clone.setAttribute('height','1700');
+  const image=artworkImage(new XMLSerializer().serializeToString(clone),'Your patch kit');await image.decode();
+  const canvas=document.createElement('canvas');canvas.width=1600;canvas.height=1700;const ctx=canvas.getContext('2d');ctx.fillStyle='#f3f2eb';ctx.fillRect(0,0,1600,1700);ctx.drawImage(image,0,0,1600,1700);
+  const blob=await new Promise(r=>canvas.toBlob(r,'image/png'));if(!blob)throw Error();
+  const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download='Feeling-Fabric-Patch-Kit.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);
+  $('kit-status').textContent='Your patch-kit preview is ready to keep.';
+ }catch{$('kit-status').textContent='Could not download the preview. Please try again.';}finally{button.disabled=false;}
+};
